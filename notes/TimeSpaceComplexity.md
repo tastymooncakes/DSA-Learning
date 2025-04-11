@@ -1,55 +1,35 @@
-# Time & Space Complexity Big O Notation
+Time & Space Complexity Big O Notation
 
-## Example 1: Squaring an Array
+Input = [1, 2, 3, 4, 5]    # can have N number of values
+Ouput = [1, 4, 9, 16, 25]  # return the square of input
 
-**Input:**  
-`[1, 2, 3, 4, 5]`  # can have N number of values  
+To achieve this we need to write some sort of function.
 
-**Output:**  
-`[1, 4, 9, 16, 25]`  # return the square of input  
+some def square(arr):
 
-To achieve this, we need to write some sort of function:
+this function will creaet a new array "Output".
+loop through Input array and square each value.
+need to visit all (N) values in Input. 
 
-```python
-def square(arr):
-    # This function will create a new array "Output".
-    # Loop through Input array and square each value.
-    # Need to visit all (N) values in Input.
-    pass
-```
+Time: O(N) meaning we need to loop through all N values => linear
 
-**Time Complexity:**  
-`O(N)` meaning we need to loop through all N values => linear  
+In an alternative example we want the Output to be all possible non-repeating pairs of numbers.
 
----
+Input = [1, 2, 3, 4, 5]    
+Ouput = [(1,2), (1, 3), (1, 4) ...]  
 
-## Example 2: Generating Non-Repeating Pairs
+In this scenario we have way more than 5 Outputs in our list. 
+To solve this problem we are effectively looping through the Input array N * N times making 
 
-**Input:**  
-`[1, 2, 3, 4, 5]`  
+Time: O(N*N) or O(N^2) => quadratic
 
-**Output:**  
-`[(1, 2), (1, 3), (1, 4), ...]`  
+----
 
-In this scenario, we have way more than 5 outputs in our list.  
-To solve this problem, we are effectively looping through the Input array `N * N` times, making:
+Creating a new array takes up space. If its proportional to Input array that is space complexity O(N)
 
-**Time Complexity:**  
-`O(N*N)` or `O(N^2)` => quadratic  
+There are scenarios were we can do the manipulation directly in the Input array that results in a space complexity of O(1)
 
----
+----
 
-## Space Complexity
-
-Creating a new array takes up space. If it's proportional to the Input array, that is space complexity `O(N)`.
-
-There are scenarios where we can do the manipulation directly in the Input array, resulting in a space complexity of `O(1)`.
-
----
-
-## Simplifying Big O
-
-For example:  
-`O(n^2 + 2n + 1)` simplifies to `O(n^2)`  
-
-Big O doesn't care about constants and only cares about the strongest components.
+O(n^2 + 2n + 1) => O(n^2)
+Big O doesn't care about constants and only cares about the strongest components
