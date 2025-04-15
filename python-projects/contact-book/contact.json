@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Alice Smith",
+    "phone": "+1-555-1234",
+    "email": "alice@example.com"
+  },
+  {
+    "name": "Bob Johnson",
+    "phone": "+1-555-5678",
+    "email": "bob.johnson@example.com"
+  },
+  {
+    "name": "Carol Lee",
+    "phone": "+1-555-8765",
+    "email": "carol.lee@example.com"
+  },
+  {
+    "name": "Mimi Li",
+    "phone": "0905650495",
+    "email": "meli@ucdavis.edu"
+  },
+  {
+    "name": "Avery Wu",
+    "phone": "123123",
+    "email": "123123"
+  }
+]
